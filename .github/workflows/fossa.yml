@@ -29,10 +29,10 @@ jobs:
           branch: ${{ github.ref_name }}
           # branch: $GITHUB_REF
 
-      - uses: cmboling/fossa-action@allow-branch-option 
-        with:
-          api-key: ${{env.FOSSA_API_KEY}}
-          run-tests: true
+#       - uses: cmboling/fossa-action@allow-branch-option 
+#         with:
+#           api-key: ${{env.FOSSA_API_KEY}}
+#           run-tests: true
       
 #       - name: Running FOSSA CLI
 #         run: |
