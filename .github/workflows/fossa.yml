@@ -27,6 +27,7 @@ jobs:
         with:
           api-key: ${{ env.FOSSA_API_KEY }}
           branch: ${{ github.ref_name }}
+          container: oraclelinux@sha256:521773838976a9b1876e609ce5c90b9ddd54f5d506c4aba9bfcd0b6e9b21eb61
           # branch: $GITHUB_REF
 
 #       - uses: cmboling/fossa-action@allow-branch-option 
