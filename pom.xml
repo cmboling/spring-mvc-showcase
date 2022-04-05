@@ -14,6 +14,7 @@
 		<org.aspectj-version>1.8.1</org.aspectj-version>
 	</properties>
 
+	<dependencyManagemenet>
 	<dependencies>
 		<!-- Spring -->
 		<dependency>
@@ -172,6 +173,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	</dependencyManagemenet>
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
