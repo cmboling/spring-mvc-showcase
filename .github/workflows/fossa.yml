@@ -23,7 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - uses: fossas/fossa-action@main
+      - uses: fossas/fossa-action@4e9e28fae0306e89d02e6a56c9ffcdae42043cb8
         with:
           api-key: ${{ env.FOSSA_API_KEY }}
           branch: ${{ github.ref_name }}
