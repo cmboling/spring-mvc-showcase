@@ -21,9 +21,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@main
 
-      - uses: cmboling/fossa-action@allow-branch-option 
+      - uses: fossas/fossa-action@allow-branch-option 
         with:
           api-key: ${{ env.FOSSA_API_KEY }}
           branch: ${{ github.ref_name }}
