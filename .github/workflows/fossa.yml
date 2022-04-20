@@ -23,13 +23,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - uses: shubham1172/fix-broken-action@main
+      - uses: shubham1172/fossa-action@main
         with:
           api-key: ${{ env.FOSSA_API_KEY }}
           branch: ${{ github.ref_name }}
           # branch: $GITHUB_REF
 # blahhhh
-      - uses: shubham1172/fix-broken-action@main
+      - uses: shubham1172/fossa-action@main
         with:
           api-key: ${{env.FOSSA_API_KEY}}
           run-tests: true
