@@ -23,16 +23,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - uses: fossas/fossa-action@4e9e28fae0306e89d02e6a56c9ffcdae42043cb8
+      - uses: shubham1172/fix-broken-action@main
         with:
           api-key: ${{ env.FOSSA_API_KEY }}
           branch: ${{ github.ref_name }}
           # branch: $GITHUB_REF
 # blahhhh
-#       - uses: cmboling/fossa-action@allow-branch-option 
-#         with:
-#           api-key: ${{env.FOSSA_API_KEY}}
-#           run-tests: true
+      - uses: shubham1172/fix-broken-action@main
+        with:
+          api-key: ${{env.FOSSA_API_KEY}}
+          run-tests: true
       
 #       - name: Running FOSSA CLI
 #         run: |
