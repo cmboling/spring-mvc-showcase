@@ -1,4 +1,4 @@
-# spring-mvc-showcase is no longer actively maintained by VMware, Inc.
+# spring-mvc-showcase
 
 Spring MVC Showcase
 -------------------
